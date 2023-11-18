@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        body{
+            background-image:url(UretkenAkademiCover.png);
+        }
+        .back
+        {
+            width: 400px;
+            height: 700px;
+            border-radius: 10px;
+            background-color:slategray;
+            top: 200px;
+            left: 35%;
+            position:relative;
+
+        }
+        button
+        {
+            width: 90px;
+            height: 100px;
+            background-color:slategray;
+            border-radius:0%;
+            margin-top: 20px;
+            font-size: larger;
+
+        }
+        .ekran
+        {
+            width: 100%;
+            height: 50px;
+        }
+        
+        </style>
+</head>
+<body>
+<div class="back">
+    <div class="ekran"><input id="d" style="width: 100%; height: 50px;font-size: 40px; background-color: darkgray;" type="text" readonly size="18"></div>
+    <button id="C" onclick="temizle()">C</button>
+    <button id="mod"onclick="display('%')">%</button>
+    <button id="sil"onclick="">Del</button>
+    <button id="böl"onclick="display('/')">/</button>
+    <button id="sayi7"onclick="display('7')">7</button>
+    <button id="sayi8"onclick="display('8')">8</button>
+    <button id="sayi9"onclick="display('9')" value="9">9</button>
+    <button id="carp"onclick="display('*')">x</button>
+    <button id="sayi4"onclick="display('4')">4</button>
+    <button id="sayi5"onclick="display('5')">5</button>
+    <button id="sayi6"onclick="display('6')">6</button>
+    <button id="eksi"onclick="display('-')">-</button>
+    <button id="sayi1"onclick="display('1')">1</button>
+    <button id="sayi2"onclick="display('2')">2</button>
+    <button id="sayi3"onclick="display('3')">3</button>
+    <button id="topla"onclick="display('+')">+</button>
+    <button id="ciftsifir"onclick="display('00')">00</button>
+    <button id="sifir"onclick="display('0')">0</button>
+    <button id="vir"onclick="display('.')">.</button>
+    <button id="esit"onclick="calculate()">=</button>
+    <h3 style="font-style: oblique;">Hesap Makinesi</h3>
+
+     <script>
+
+       function temizle()
+       {
+        document.getElementById("d").value="";
+       }
+       function display(value)
+       {
+        document.getElementById("d").value+=value;
+       }
+       function calculate()
+       {
+        var p=document.getElementById("d").value;
+        var q=eval(p);
+        document.getElementById("d").value=q;
+       }
+
+    </script>
+</body>
+</html>
+
