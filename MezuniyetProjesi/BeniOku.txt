@@ -1,0 +1,10 @@
+Bu projede Asp Net Core üzerinden Dapper orm kullanarak basit bir Web Api projesi yazdım.
+Bu apiyi kullanarak bir React projesi oluşturdum ve burdaki verileri kullanarak bir malzeme takip uygulaması yazdım.
+Bu uygulamada stok ekleyebilir silebilir düzenleyebilirsiiz.Aynı şekilde Departman,Marka,Kategori de bu işlemler yapılabilir.
+Stok sayfasında arama yapılabilir.
+Örnek bir proje olduğu için JWT,n-kat mimari api d kullanmadım.
+
+
+!!!!!!!
+Apiyi çalıştırırken appsettings.json da SqlConnevtion alanını doldurunuz.Veri tabanını kendi Sql Manager veya veri tabanı programına atarak
+bağlantı ayarını yapınız.
